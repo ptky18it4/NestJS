@@ -79,3 +79,11 @@ npm i -g @nestjs/cli
 - Deploying NestJS apps to AWS(Amazong Web Services)
 - Deploying front-end applications to Amazon S3
 - Wiring up the front-end and back-end
+
+# lecture/04-creating-a-project-via-the-cli
+
+- creating project via the cli
+
+```bash
+nest new nestjs-task-management
+```
