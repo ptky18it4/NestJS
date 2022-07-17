@@ -175,3 +175,11 @@ Handler are simply methods within the controller class, decorated with decorator
 |                                    | createTask()<br> `POST /tasks`            | deleteUser()<br> `DELETE /users/:id` |
 |                                    | deleteTask()<br> `DELETE /task/:id`       |                                      |
 |                                    | updateTaskStatus()<br> `PATCH /tasks/:id` |                                      |
+
+# lecture/08-Creating a Controller Via CLI
+
+⚠️ Don't forget `cd to nestjs-task-management`
+
+```bash
+nest g controller tasks --no-spec
+```
