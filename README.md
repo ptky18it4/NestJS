@@ -116,3 +116,17 @@ The decorator provides metadatas that Nest users to organize the application str
 ![ScreenShort](./nestjs-task-management/assets/ForumModule.png)
 
 ![ScreenShort](./nestjs-task-management/assets/Module%20Definition%20Examplepng.png)
+
+# lecture/06-Creating a Project | Module Scalable API | Modern TypeScript | JS
+
+> Pattern
+
+```bash
+nest g module module_name
+```
+
+> Bash
+
+```bash
+nest g module tasks
+```
