@@ -213,3 +213,9 @@ Any command within the NestJS ecosystem can inject a provider that it decorated 
 We define the dependencies in the constructor of the class. NestJS will take care of the injection for us, and it will then be available as a class property.
 
 ![DependencyInjectionInNestJS](./assets/code-dependency%20injection%20in%20NestJS.png)
+
+# lecture/10-Creating a Tasks Service | Scalable API | Modern TypeScript | JS |
+
+```bash
+nest g service tasks --no-spec
+```
