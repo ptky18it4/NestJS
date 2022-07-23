@@ -1,10 +1,6 @@
+import { Task } from './task.model';
 export declare class TasksService {
     private tasks;
-    getAllTasks(): {
-        id: number;
-        name: string;
-        status: boolean;
-        email: string;
-        gender: string;
-    }[];
+    getAllTasks(): Task[];
+    createTask(title: string, description: string): Task;
 }

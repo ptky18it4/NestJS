@@ -219,3 +219,66 @@ We define the dependencies in the constructor of the class. NestJS will take car
 ```bash
 nest g service tasks --no-spec
 ```
+
+# lecture/11-Getting all tasks
+
+> Coding!
+
+# lecture/12-Defining a task model
+
+> Coding!
+
+# lecture/13-Creating a task part 1
+
+> Coding!
+
+# lecture/14-Creating a task part 2
+
+> Coding!
+
+# lecture/15-Data transfer objects `dtos`
+
+## Understanding the problem
+
+> `A data transfer object is an object that carries data between processes`
+
+> `A Data Transfer Object is an object that is used to encapsulate data , and send it from one subsystem of an application to another.`
+
+> `A DTO is an object that defines how the data will be sent over the network.`
+
+## More about dtos
+
+- Common concept in software development that is not specific to NestJS.
+- Result in more bulletproof code, as it can be used as a TypeScript type.
+- Do not have any behavior except for storage, retrieval, serialization and deserialization of its own data.
+- Resolve in increased performance (although negligible in small applications).
+- Can be useful for data validation
+- A DTO is `NOT` a model definition. Its defines the shapes of data for a specific case, for example - creating a task.
+- Can be defined using interface or a class.
+
+## Classes VS Interfaces for DTOs
+
+- Data Transfer Objects `(DTO)` can be defined as class or interface.
+- The recommended approach is to use classes, also clearly documented in the NestJS documentation.
+- The reason is that interfaces are a part of TypeScript and are not preserved post-compilation.
+- Classes allows us to do more, and since they are a part of JavaScript, they will be preserved post-compilation.
+- NestJS cannot refer to interfaces in run-time, but can refer to classes.
+
+`TLDR: Classes are the way to go for DTOs.`
+
+## Example DTOs
+
+| CreateShippingDto <br>` POST /shipping` | UpdateShippingAddressDto<br>`PATCH /shipping/:id/address` | createTransitDto <br> `POST /transit` |
+| --------------------------------------- | --------------------------------------------------------- | ------------------------------------- |
+| orderId: string;                        | streetName: string                                        | deliveryIds: string[];                |
+| deliveryAddress: Address;               | houseNumber: number                                       | driverId: string;                     |
+| requiresSignature: boolean;             | zipCode: string                                           | vehicleNumber: number                 |
+|                                         | city: string                                              | departureTime: UTCDate                |
+|                                         | country: string                                           |
+
+## Important note!
+
+- Data Transfer Objects are **NOT** mandatory.
+- You can still develop application without using DTOs.
+- However, the value they add makes it worthwhile to use them when applicable.
+- Applying the DTO pattern as soon as possible will make it easy for you maintain and refactor your code.
