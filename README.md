@@ -302,3 +302,26 @@ nest g service tasks --no-spec
 ```URL
 **DELETE** http://localhost:3000/task/cc4e4319-0cde-4280-a1dc-d9e197f5ab91
 ```
+
+# lecture/20-challenge-updating-a-task's status
+
+## Challenge time!
+
+> Updating a Task's Status
+
+## Updating a Task's Status
+
+- Incoming **PATCH** HTTP request
+- The URL will contain the ID of the task to be updated.
+- The request body will contain the new status.
+- Handle the request - extract the ID and the status, and update the task's status.
+
+## `PATCH` best practice
+
+- Refer to the resource in the URL;
+- Refer to a specific item by ID;
+- Provide the required parameters in the `request body`.
+
+```API
+`PATCH` http://localhost:3000/tasks/325d9273-53e1-4a1d-a960-101664328696
+```
