@@ -38,6 +38,16 @@ export class TasksService {
 
   /**
    *
+   * @param id of task you want to update status
+   */
+  updateTaskStatus(id: string, status: TaskStatus): Task {
+    const task = this.getTaskById(id);
+    task.status = status;
+    return task;
+  }
+
+  /**
+   *
    * @param id of task you want to delete
    */
   deleteTask(id: string): void {
