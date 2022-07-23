@@ -35,4 +35,12 @@ export class TasksService {
     this.tasks.push(task);
     return task;
   }
+
+  /**
+   *
+   * @param id of task you want to delete
+   */
+  deleteTask(id: string): void {
+    this.tasks = this.tasks.filter((task) => task.id !== id);
+  }
 }
