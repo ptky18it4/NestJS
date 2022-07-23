@@ -282,3 +282,7 @@ nest g service tasks --no-spec
 - You can still develop application without using DTOs.
 - However, the value they add makes it worthwhile to use them when applicable.
 - Applying the DTO pattern as soon as possible will make it easy for you maintain and refactor your code.
+
+# lecture/16-creating CreateTaskDto
+
+-
