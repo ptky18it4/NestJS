@@ -285,4 +285,20 @@ nest g service tasks --no-spec
 
 # lecture/16-creating CreateTaskDto
 
--
+# lecture/17-getting-a-task-by-id
+
+# lecture/18-challenge-deleting-a-task
+
+## Challenge time!
+
+> Deleting a Task
+
+## Deleting a Task
+
+- Incoming DELETE **HTTP** request
+- The URL will contain the ID of the task to be deleted.
+- Handle the request - extract the ID and delete the task
+
+```URL
+**DELETE** http://localhost:3000/task/cc4e4319-0cde-4280-a1dc-d9e197f5ab91
+```
