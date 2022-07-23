@@ -325,3 +325,7 @@ nest g service tasks --no-spec
 ```API
 `PATCH` http://localhost:3000/tasks/325d9273-53e1-4a1d-a960-101664328696
 ```
+
+# lecture/21-solution-updating-a-task-status
+
+# 22-feature-searching-and-filtering-tasks
