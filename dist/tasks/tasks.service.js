@@ -17,6 +17,9 @@ let TasksService = class TasksService {
     getAllTasks() {
         return this.tasks;
     }
+    getTaskById(id) {
+        return this.tasks.find((task) => task.id === id);
+    }
     createTask(createTaskTodo) {
         const { title, description } = createTaskTodo;
         const task = {
