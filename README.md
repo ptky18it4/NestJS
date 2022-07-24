@@ -392,3 +392,31 @@ npm i class-validator class-transformer --save
 
 After add add annotation to 2 files `tasks.controller.ts` and `create-task.dto.ts` -> Then, you open `PostMan` or `ThunderClient` for test api. You can see the result in the image below.
 ![isNotEmpty](./assets/pipe_isNotEmpty_annotation.png)
+
+# lecture/24-ValidationPipe-creating-a-task
+
+> Using `git diff <current-branch> <prev-branch>` to see different between branhc
+
+# lecture/25-error-handling-getting-a-non-existing-task
+
+> Using `git diff <current-branch> <prev-branch>` to see different between branhc
+
+# lecture/26-error-handling-deleting-a-non-existing-task
+
+> Using `git diff <current-branch> <prev-branch>` to see different between branhc
+
+# lecture/27-custom-pipe-validating-the-task-status
+
+> Using `git diff <current-branch> <prev-branch>` to see different between branhc
+
+# lecture/28-ValidationPipe-task-filtering-and-search
+
+> Using `git diff <current-branch> <prev-branch>` to see different between branhc
+
+# lecture/29-using-pgAdmin-to-create-a-database
+
+`Prerequire:`
+
+- Install PostgreSQL
+
+#
