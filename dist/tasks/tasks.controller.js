@@ -59,6 +59,7 @@ __decorate([
 ], TasksController.prototype, "getTaskById", null);
 __decorate([
     (0, common_1.Post)(),
+    (0, common_1.UsePipes)(common_1.ValidationPipe),
     __param(0, (0, common_1.Body)()),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", [create_task_dto_1.CreateTaskDto]),

@@ -384,6 +384,11 @@ NestJS ships with useful pipes within the _@nestjs/common_ module.
 - Responsibility of indentifying the arguments to process is shifted to one central file - the pipe file
 - Promote usage of DTOs (Data Transfer Objects) which is a very good practice.
 
----
+# 23-ValidationPipe Creating a Task
 
----
+```bash
+npm i class-validator class-transformer --save
+```
+
+After add add annotation to 2 files `tasks.controller.ts` and `create-task.dto.ts` -> Then, you open `PostMan` or `ThunderClient` for test api. You can see the result in the image below.
+![isNotEmpty](./assets/pipe_isNotEmpty_annotation.png)
