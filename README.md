@@ -419,4 +419,57 @@ After add add annotation to 2 files `tasks.controller.ts` and `create-task.dto.t
 
 - Install PostgreSQL
 
-#
+# lecture/30-Object Relational Mapping (ORM) and TypeORM
+
+**Object Relational Mapping (ORM)**
+
+- Object Relational Mapping (ORM) is a technique that lets you query and manipulate data from a database, using an object-oriented paradigm.
+
+- There are many ORM libraries that allow developers to communicate to the database using their preferred programming language - rather than sending plain queries directly.
+
+**`Pros` and `Cons` of using an ORM library**
+
+> `Pros`
+
+- Writing the data model being once place - easier to maintain. Less repetition.
+
+- Lots of things done automatically - database handling, data types, relations etcetera.
+- No need to write SQL syntax (easy to learn, hard to master). Using your natural way of coding.
+- Database abstraction - you can change the database type whenever you wish.
+- Leverages OOP, therefore things like inheritance are easy to achieve.
+
+> `Cons`
+
+- You have to learn it, and ORM libraries are not always simple.
+- Performance is alright, but it's easy to neglect.
+- Make is easy to forget (or never learn) what's happening behind the scenes, which can lead to a variety of maintainability issues.
+
+**TypeORM**
+
+- TypeORM is an ORM library that can run in Node.js and be used with TypeScript (or JavaScript).
+- Helps us define and manage entities, repositories, columns, relations, replication, indices, queries, logging and `so much more`.
+
+**Example**
+
+- Retrieving all tasks owned by "_Kenneth_" and are of status "_DONE_"
+
+```ts
+// TypeORM
+const tasks = await Task.find({ status: 'DONE', user: 'Kenneth' });
+```
+
+```js
+// Pure JavaScript
+let tasks;
+db.query(
+  "SELECT * FROM tasks WHERE status = 'DONE' AND user = 'Kenneth'",
+  (err, result) => {
+    if (err) {
+      throw new Error('Could not retrieve tasks!');
+    }
+    tasks = result.rows;
+  },
+);
+```
+
+`⚠️ Read more!`[Link to TypeORM documentation](https://typeorm.io)
