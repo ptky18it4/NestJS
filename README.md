@@ -2,7 +2,9 @@
 
 NestJS from zero to hero
 
-# lecture/02-installing-the-NestJS
+# **lecture/01-NestJS**
+
+# **lecture/02-installing-the-NestJS**
 
 ```bash
 npm i -g @nestjs/cli
@@ -10,7 +12,7 @@ npm i -g @nestjs/cli
 
 > After installed, using `nest --version` to check current nestjs
 
-# lecture/03-project-overview
+# **lecture/03-project-overview**
 
 ## **AppModule (root)**
 
@@ -80,7 +82,7 @@ npm i -g @nestjs/cli
 - Deploying front-end applications to Amazon S3
 - Wiring up the front-end and back-end
 
-# lecture/04-creating-a-project-via-the-cli
+# **lecture/04-creating-a-project-via-the-cli**
 
 - creating project via the cli
 
@@ -88,7 +90,7 @@ npm i -g @nestjs/cli
 nest new nestjs-task-management
 ```
 
-# lecture/05-introduction-to-modules
+# **lecture/05-introduction-to-modules**
 
 - Each application has at least one module - the root module. That is the starting point of the application..
 
@@ -117,7 +119,7 @@ The decorator provides metadatas that Nest users to organize the application str
 
 ![ScreenShort](./assets/Module%20Definition%20Examplepng.png)
 
-# lecture/06-Creating a Project | Module Scalable API | Modern TypeScript | JS
+# **lecture/06-Creating a Project | Module Scalable API | Modern TypeScript | JS**
 
 > Pattern
 
@@ -131,7 +133,7 @@ nest g module module_name
 nest g module tasks
 ```
 
-# lecture/07-Creating a Controller in NestJS | Scalable API | Modern TypeScript
+# **lecture/07-Creating a Controller in NestJS | Scalable API | Modern TypeScript**
 
 ## NestJS controllers
 
@@ -176,7 +178,7 @@ Handler are simply methods within the controller class, decorated with decorator
 |                                    | deleteTask()<br> `DELETE /task/:id`       |                                      |
 |                                    | updateTaskStatus()<br> `PATCH /tasks/:id` |                                      |
 
-# lecture/08-Creating a Controller Via CLI
+# **lecture/08-Creating a Controller Via CLI**
 
 ⚠️ Don't forget `cd to nestjs-task-management`
 
@@ -184,7 +186,7 @@ Handler are simply methods within the controller class, decorated with decorator
 nest g controller tasks --no-spec
 ```
 
-# lecture/09-NestJS Providers and Services
+# **lecture/09-NestJS Providers and Services**
 
 ## NestJS Providers
 
@@ -214,29 +216,29 @@ We define the dependencies in the constructor of the class. NestJS will take car
 
 ![DependencyInjectionInNestJS](./assets/code-dependency%20injection%20in%20NestJS.png)
 
-# lecture/10-Creating a Tasks Service | Scalable API | Modern TypeScript | JS |
+# **lecture/10-Creating a Tasks Service | Scalable API | Modern TypeScript | JS |**
 
 ```bash
 nest g service tasks --no-spec
 ```
 
-# lecture/11-Getting all tasks
+# **lecture/11-Getting all tasks**
 
 > Coding!
 
-# lecture/12-Defining a task model
+# **lecture/12-Defining a task model**
 
 > Coding!
 
-# lecture/13-Creating a task part 1
+# **lecture/13-Creating a task part 1**
 
 > Coding!
 
-# lecture/14-Creating a task part 2
+# **lecture/14-Creating a task part 2**
 
 > Coding!
 
-# lecture/15-Data transfer objects `dtos`
+# **lecture/15-Data transfer objects `dtos`**
 
 ## Understanding the problem
 
@@ -283,11 +285,11 @@ nest g service tasks --no-spec
 - However, the value they add makes it worthwhile to use them when applicable.
 - Applying the DTO pattern as soon as possible will make it easy for you maintain and refactor your code.
 
-# lecture/16-creating CreateTaskDto
+# **lecture/16-creating CreateTaskDto**
 
-# lecture/17-getting-a-task-by-id
+# **lecture/17-getting-a-task-by-id**
 
-# lecture/18-challenge-deleting-a-task
+# **lecture/18-challenge-deleting-a-task**
 
 ## Challenge time!
 
@@ -303,7 +305,7 @@ nest g service tasks --no-spec
 **DELETE** http://localhost:3000/task/cc4e4319-0cde-4280-a1dc-d9e197f5ab91
 ```
 
-# lecture/20-challenge-updating-a-task's status
+# **lecture/20-challenge-updating-a-task's status**
 
 ## Challenge time!
 
@@ -326,11 +328,11 @@ nest g service tasks --no-spec
 `PATCH` http://localhost:3000/tasks/325d9273-53e1-4a1d-a960-101664328696
 ```
 
-# lecture/21-solution-updating-a-task-status
+# **lecture/21-solution-updating-a-task-status**
 
-# 22-feature-searching-and-filtering-tasks
+# **22-feature-searching-and-filtering-tasks**
 
-# 23-introduction-to-nestjs-pipes
+# **23-introduction-to-nestjs-pipes**
 
 ## NestJS Pipes
 
@@ -384,7 +386,7 @@ NestJS ships with useful pipes within the _@nestjs/common_ module.
 - Responsibility of indentifying the arguments to process is shifted to one central file - the pipe file
 - Promote usage of DTOs (Data Transfer Objects) which is a very good practice.
 
-# 23-ValidationPipe Creating a Task
+# **23-ValidationPipe Creating a Task**
 
 ```bash
 npm i class-validator class-transformer --save
@@ -393,33 +395,33 @@ npm i class-validator class-transformer --save
 After add add annotation to 2 files `tasks.controller.ts` and `create-task.dto.ts` -> Then, you open `PostMan` or `ThunderClient` for test api. You can see the result in the image below.
 ![isNotEmpty](./assets/pipe_isNotEmpty_annotation.png)
 
-# lecture/24-ValidationPipe-creating-a-task
+# **lecture/24-ValidationPipe-creating-a-task**
 
 > Using `git diff <current-branch> <prev-branch>` to see different between branhc
 
-# lecture/25-error-handling-getting-a-non-existing-task
+# **lecture/25-error-handling-getting-a-non-existing-task**
 
 > Using `git diff <current-branch> <prev-branch>` to see different between branhc
 
-# lecture/26-error-handling-deleting-a-non-existing-task
+# **lecture/26-error-handling-deleting-a-non-existing-task**
 
 > Using `git diff <current-branch> <prev-branch>` to see different between branhc
 
-# lecture/27-custom-pipe-validating-the-task-status
+# **lecture/27-custom-pipe-validating-the-task-status**
 
 > Using `git diff <current-branch> <prev-branch>` to see different between branhc
 
-# lecture/28-ValidationPipe-task-filtering-and-search
+# **lecture/28-ValidationPipe-task-filtering-and-search**
 
 > Using `git diff <current-branch> <prev-branch>` to see different between branhc
 
-# lecture/29-using-pgAdmin-to-create-a-database
+# **lecture/29-using-pgAdmin-to-create-a-database**
 
 `Prerequire:`
 
 - Install PostgreSQL
 
-# lecture/30-Object Relational Mapping (ORM) and TypeORM
+# **lecture/30-Object Relational Mapping (ORM) and TypeORM**
 
 **Object Relational Mapping (ORM)**
 
@@ -473,3 +475,21 @@ db.query(
 ```
 
 `⚠️ Read more!`[Link to TypeORM documentation](https://typeorm.io)
+
+# **lecture/31-connecting-nestjs-to-a-database-using-typeorm**
+
+```bash
+yarn add @nestjs/typeorm typeorm pg
+```
+
+```bash
+yarn add dotenv
+```
+
+```bash
+npm i --save @nestjs/config
+```
+
+```bash
+npm install -g win-node-env
+```
