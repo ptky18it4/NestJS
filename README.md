@@ -493,3 +493,5 @@ npm i --save @nestjs/config
 ```bash
 npm install -g win-node-env
 ```
+
+# **lecture/33-creating-a-task-entity**
